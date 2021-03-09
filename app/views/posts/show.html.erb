@@ -2,7 +2,9 @@
 
 <p>
   <strong>Title:</strong>
-  <%= @post.title %>
+  <%= @post.title %> <br>
+  <%= @post.picture.attached? %> <br>
+  <img src="<%= url_for(@post.picture) if @post.picture.attached? %>" style="width: 300px;" alt="Italian Trulli">
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
