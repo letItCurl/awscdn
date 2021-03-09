@@ -4,7 +4,7 @@
   <strong>Title:</strong>
   <%= @post.title %> <br>
   <%= @post.picture.attached? %> <br>
-  <img src="<%= url_for(@post.picture) if @post.picture.attached? %>" style="width: 300px;" alt="Italian Trulli">
+  <img src="<%= public_blob_url(@post.picture.blob) %>" style="width: 300px;" alt="Italian Trulli"> <br>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
