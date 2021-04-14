@@ -1,11 +1,22 @@
 <p id="notice"><%= notice %></p>
-
-<p>
+<!--
+  <p>
+    <strong>Title:</strong>
+    <%#= @post.title %> <br>
+    <%#= @post.picture.attached? %> <br>
+    <img src="<#%= public_blob_url(@post.picture.blob) %>" style="width: 300px;" alt="Italian Trulli"> <br> <%# custom helper %>
+    <h3>SERVICE URL:</h3>
+    <%#= @post.picture.service_url %>
+  </p>
+-->
+<div>
   <strong>Title:</strong>
-  <%= @post.title %> <br>
-  <%= @post.picture.attached? %> <br>
-  <img src="<%= public_blob_url(@post.picture.blob) %>" style="width: 300px;" alt="Italian Trulli"> <br>
-</p>
+  <p><%= @post.title %></p>
+
+  <strong>Picture:</strong>
+
+  <strong>Description:</strong>
+</div>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
 <%= link_to 'Back', posts_path %>

@@ -30,8 +30,8 @@ Rails.application.configure do
 
   # Store uploaded files on the local file system (see config/storage.yml for options).
   config.active_storage.service = :amazon
-  config.hosts << "plastic-lionfish-80.loca.lt" # TEST PRUPOSES
-  # config.action_controller.asset_host = "d1rornid3wzyqs.cloudfront.net" # will not work if you put the bucket as origin...
+  # config.hosts << "average-eagle-31.loca.lt" # TEST PRUPOSES
+  # config.action_controller.asset_host = "d2gau0c3t2npnc.cloudfront.net" # will not work if you put the bucket as origin...
 
 
 
