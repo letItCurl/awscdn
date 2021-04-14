@@ -10,12 +10,14 @@
   </p>
 -->
 <div>
-  <strong>Title:</strong>
+  <p><strong>Title:</strong></p>
   <p><%= @post.title %></p>
 
-  <strong>Picture:</strong>
+  <p><strong>Picture:</strong></p>
+  <%= image_tag(@post.picture, style: "width: 300px;") %>
 
-  <strong>Description:</strong>
+  <p><strong>Description:</strong></p>
+  <p><%= @post.description %></p>
 </div>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |
