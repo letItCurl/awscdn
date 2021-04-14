@@ -21,6 +21,11 @@
     <%= form.file_field :picture %>
   </div>
 
+  <div class="field" data-controller="dr">
+    <%= form.label :video %>
+    <%= form.file_field :video, direct_upload: true %>
+  </div>
+
   <div class="field">
     <%= form.label :description %>
     <%= form.rich_text_area :description %>
